@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+.container{
+    padding:10px;
+    min-height: 100vh;
+    background-color: #eee;
+}
+.posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+.post{
+    background:white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius:10px;
+}
+.post img{ max-width: 100%; width:100%; height: 260px; border-radius:10px 10px 0 0; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; -ms-border-radius:10px 10px 0 0; -o-border-radius:10px 10px 0 0; }
+.post-card{
+    font-family: sans-serif;
+    text-align:justify;
+    padding:30px;
+   
+}
+
+.title{
+    text-align:left;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.text{
+    font-size: 17px;
+    margin-top: 20px;
+}
+.btn-more-post{
+    background: rgb(5, 152, 221);
+    border: none;
+    width:200px;
+    color:white;
+    padding:10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.btn-more-post:hover{
+    background: rgb(4, 64, 92);
+
+}
+.btn-more-post:disabled{
+    background:#eee;
+    cursor:not-allowed;
+    color:#999;
+}
+.area-btn{
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pesquisar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control{
+    width: 350px;
+    padding-left: 10px;
+    max-width: 100%;
+    height:40px;
+    margin:10px;
+    border: 1px solid #ccc;
+    background:#fff;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    text-align: center;
+}
+.pesq{
+    margin-left: 35px;
+    font-family: sans-serif;
+    text-decoration: underline;
+    font-size:18px;
+    margin:20px;
+}
+.post-nao{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin:20px;
+}
+.meio{
+    text-align: center;
+    margin: 20px;
+}
